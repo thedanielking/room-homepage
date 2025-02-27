@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- my css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- my font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+
+  <div class="container">
+      <header>
+          <img src="./images/icon-hamburger.svg" class="menuBtn" alt="menu button">
+          <img src="./images/logo.svg" class="logo" alt="logo">
+          <div class="">
+            <nav class="">
+              <img src="./images/icon-close.svg" alt="close button" class="closeBtn">
+              <ul>
+                <li><button>home</button></li>
+                <li><button>shop</button></li>
+                <li><button>about</button></li>
+                <li><button>contact</button></li>
+              </ul>
+              </nav>
+          </div>
+      </header>
+
+      <main>
+        <section class="showcase active">
+          <div class="showcase__Image">
+              <picture>
+                  <source media = "(max-width: 368px)" srcset="./images/mobile-image-hero-1.jpg" class="mainImage">
+                  <img src="./images/desktop-image-hero-1.jpg" alt="hero 1" class="desktopmainImage">
+              </picture>
+              <div class="sliderBtn">
+                  <div class="previous" onclick="previousSlide()">
+                      <img src="./images/icon-angle-left.svg" class="previousBtn" alt="previous">
+                  </div>
+                  <div class="next" onclick="nextSlide()">
+                      <img src="./images/icon-angle-right.svg" alt="next" class="nextBtn">
+                  </div>
+              </div>
+          </div>
+          <div class="showcase__desc">
+            <h1>Discover innovative ways to decorate</h1>
+            <p>
+                Discover innovative ways to decorate
+                We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+              <button>
+                <p>Shop Now</p>
+                <img src="./images/icon-arrow.svg">
+              </button>
+          </div>
+        </section>
+        
+        <section class="aboutUs">
+          <div>
+            <img src="./images/image-about-dark.jpg" alt="about dark">
+          </div>
+          <div class="aboutUs__desc">
+            <h2>About Our furniture</h2>
+            <p>
+                About our furniture
+                Our multifunctional collection blends design and function to suit your individual taste.
+                Make each room unique, or pick a cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                or anything in between. Product specialists are available to help you create your dream space.
+            </p>
+          </div>
+          <div>
+            <img src="./images/image-about-light.jpg" alt="about light">
+          </div>
+        </section>
+      </main>
+  </div>
+  
+
+  <script src="./app.js"></script>
+</body>
+</html>
