@@ -83,6 +83,15 @@ const updateSlide = (slideIndex)=>{
     })
 }
 
+// keyboard arrow key
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowLeft') {
+      previousSlide();
+    } else if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+  });
+
 
 
 
